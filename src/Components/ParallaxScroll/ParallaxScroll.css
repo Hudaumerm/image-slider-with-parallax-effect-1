@@ -1,0 +1,144 @@
+.scroll-parallax .earth-video{
+    height: 100vh;
+    max-width: 100%;
+}
+.image2 img {
+    width: 100%;
+}
+.slider{
+
+        /* The image used */
+        background-image: url("https://images.pexels.com/photos/4037138/pexels-photo-4037138.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      
+        /* Set a specific height */
+        /* min-height: 500px; */
+      
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+.image1{
+    height: 100vh;
+    position: relative;
+}
+.image1 .moon{
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%);
+    width:30vw;
+    animation: moon 1s ease-in-out;
+    animation-fill-mode: forwards;
+
+
+ }  
+ @keyframes moon{
+  from{
+        top:-10px;
+    }
+   to{
+        top:5vw;
+    }
+    /* 100%{
+        top:5vw;
+    } */
+    }      
+
+        
+.image2{
+    background-image: url("https://www.sliderrevolution.com/wp-content/uploads/revslider/artistic-parallax-slider/sld3-bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+.image2 .jupiter{
+    position: absolute;
+    width: 25%;
+    bottom:0;
+    left: 50%;
+    transform: translate(-50%);
+    animation:jupiter 5s ease-in-out ;
+    animation-fill-mode: forwards;
+
+}
+@keyframes jupiter{
+    from{
+        bottom:0;
+    }
+   to{
+        bottom:15vw;
+    }
+}
+.image2 .ground{
+    position: absolute;
+    bottom: 0;
+}
+.image3{
+    /* background-image: url("https://www.sliderrevolution.com/wp-content/uploads/revslider/artistic-parallax-slider/sld3-bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    position: relative;
+    height: 100vh;    
+}
+.image3 .earth{
+    position: absolute;
+    width: 30vw;
+    animation:earth 5s infinite;
+}
+@keyframes earth{
+    from{
+        transform: rotateY(0deg);
+    }
+   to{
+    transform: rotateY(360deg);
+}
+}
+.earth-div{
+    position: relative;
+    height: 100vh;
+}
+
+.earth {
+    width: 300px;
+    height: 300px;
+    background: url(https://web.archive.org/web/20150807125159if_/http://www.noirextreme.com/digital/Earth-Color4096.jpg);
+    border-radius: 50%;
+    background-size: 610px;
+    box-shadow: inset 8px 36px 80px 36px rgb(0, 0, 0), inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);
+    animation-name: rotate;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotate;
+       -webkit-animation-duration: 12s;
+       -webkit-animation-iteration-count: infinite;
+       -webkit-animation-timing-function: linear;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+  }
+  @keyframes rotate {
+    from {
+      background-position: 0px 0px;
+    }
+    to {
+      background-position: 610px 0px;
+    }
+}
+@-webkit-keyframes rotate {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 610px 0px;
+  }
+}
+
+

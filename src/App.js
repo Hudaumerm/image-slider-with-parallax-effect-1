@@ -1,23 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
+import ImageSliderParallax from './Components/ImageSliderParallax/ImageSliderParallax';
+import ParallaxScroll from './Components/ParallaxScroll/ParallaxScroll';
+import ImageSlider from './Components/ImagSlider/ImageSlider';
+import LettheAdvBegin from './Components/LetThe AdvBegin/LettheAdvBegin';
+import RowCard from './Components/RowCard/RowCard';
+import Travel from './Components/Travel/Travel';
+import { createContext, useState } from 'react';
 
+export const newContext=createContext()
 function App() {
+  const [click, setClick] = useState(false)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <newContext.Provider value={{click,setClick}}>
+      {/* <ImageSliderParallax/> */}
+      {/* <ParallaxScroll/> */}
+      <LettheAdvBegin/>
+      <RowCard/>
+      
+      <ImageSlider/>
+     
+      <Travel/>
+      
+      </newContext.Provider>
+     
     </div>
   );
 }

@@ -1,0 +1,59 @@
+.travel-notes{
+    background: url(https://images.pexels.com/photos/18190098/pexels-photo-18190098/free-photo-of-green-forest-in-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.travel-notes h2{
+    font-size: 5vw;
+    mix-blend-mode: overlay;
+}
+.image-box{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.image-box img{
+    width: 50%;
+}
+.image-box h3{
+    font-size:4vw;
+}
+.image-box .p-div{
+    margin: 0 10px;
+
+}
+.image-box p{
+    background-color:rgba(222, 222, 244,0.5);
+    width: 100%;
+    font-size: 1vw;
+}
+.image-box1{
+    display: flex;
+    flex-direction: column;
+}
+.image-box1 img{
+    width: 50%;
+}
+.image-box1 h3{
+    font-size:4vw;
+}
+.image-box1 .p-div{
+    margin: -10px 10px;
+
+}
+.image-box1 p{
+    background-color:rgba(157, 183, 144, 0.5);
+    width: 100%;
+    font-size: 1vw;
+}
+  @media only screen and (max-device-width: 768px) {
+    .travel-notes {
+      background-attachment: scroll;
+    }
+  }
